@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Rain</title>
+    <link rel="stylesheet" href="rain.css">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="rain ">
+        <div class="container" style="margin-right: 100px;">
+            <div id="scene"  class="heading-text heading-section text-center m-b-40" data-animate="fadeInUp">
+                <!--Background-->
+                <img src="images/background.gif" alt="wave print" data-depth="-0.1" style="width: 110%; height: 110%; opacity: 0.8;" />
+                
+                <!--Women-->
+                <img class="" src="images/women.gif" alt="print" data-depth="0.1" style="width: 100%; height: 100%; opacity: 0.8;" />
+              
+                <!--Man-->
+                <img class="" src="images/man.gif" alt=" print" data-depth="0.5" style="width: 100%; height: 100%;" />
+             
+                  <!--Children-->
+                <img src="images/child.gif" alt="print" data-depth="0.6" style="width: 100%; height: 100%; padding-left: 100px" /> 
+            </div>
+        </div>
+        <div id="audio">
+         <!-- <a><img  src="images/sound.png" alt="sound icon" style="position: fixed; bottom: 5; right: 35;"/></a> -->
+        <!-- <audio controls style="position: fixed; bottom: 5; right: 15; color: grey;">
+
+            <source src="rain.ogg" type="audio/ogg">
+            <source src="rain.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> -->
+      
+         
+            <audio controls >
+                <source src="rain.ogg" type="audio/ogg">
+                <source src="rain.mp3" type="audio/mpeg">
+                Your browser doesn't support the audio element.
+            </audio>
+   
+        </div>
+            <div class="home" style="border: none; color: #fff" >
+            <a href="https://inblockdesign.com/index.html">
+                <div style="border: 2px solid #fff; padding: 10px 20px; margin-right: 170px" id="title"><i class="fa fa-home"></i></div>
+           </a>                     
+        </div>
+
+
+          <div class="arrow" style="border: none">
+            <a href="index.html">
+                <div style="border: 2px solid #fff; padding: 10px 20px" id="title"><i class="fa fa-arrow-left"></i></div>
+           </a>                     
+        </div>
+
+        <div class="centered"> 
+            <a href="rain.html">
+                <div id="title" >Continue...</div>
+            </a>
+            <div id="subtitle"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+
+</html>
